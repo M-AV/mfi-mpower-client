@@ -24,7 +24,13 @@ namespace mFI_mPower.ConsoleClient
 
             using (var websocketClient = new MPowerWebSocketClient(ip))
             {
-                websocketClient.OnStatusUpdate += Client_OnStatusUpdate;
+                websocketClient.OnStatusUpdate += (o, e) =>
+                {
+                    foreach (var sensor in e.Message.Sensors)
+                    {
+                        Console.WriteLine("   - " + sensor.Port + " : " + sensor.Power + " : " + sensor.Relay + " : " + sensor.Output);
+                    }
+                };
                 while (true)
                 {
                     Console.WriteLine();
@@ -102,15 +108,6 @@ namespace mFI_mPower.ConsoleClient
                     }
                 }
             }
-        }
-
-        private static void Client_OnStatusUpdate(object sender, OnUpdateEventArgs e)
-        {
-            foreach (var sensor in e.Message.Sensors)
-            {
-                Console.WriteLine("   - " + sensor.Port + " : " + sensor.Power + " : " + sensor.Relay + " : " + sensor.Output);
-            }
-            _printSingle = false;
         }
     }
 }
