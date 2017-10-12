@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mFI mPower Client", "mFI mPower Client\mFI mPower Client.csproj", "{818CB8E8-EC35-490A-93EF-DE515CF511AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mFI mPower.ConsoleClient", "mFI mPower.ConsoleClient\mFI mPower.ConsoleClient.csproj", "{950907D9-1340-46A4-89D5-56A4CD8AE6C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{818CB8E8-EC35-490A-93EF-DE515CF511AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{818CB8E8-EC35-490A-93EF-DE515CF511AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{818CB8E8-EC35-490A-93EF-DE515CF511AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{818CB8E8-EC35-490A-93EF-DE515CF511AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{950907D9-1340-46A4-89D5-56A4CD8AE6C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{950907D9-1340-46A4-89D5-56A4CD8AE6C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{950907D9-1340-46A4-89D5-56A4CD8AE6C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{950907D9-1340-46A4-89D5-56A4CD8AE6C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
