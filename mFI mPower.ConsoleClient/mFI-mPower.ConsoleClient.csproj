@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\mFI mPower Client\mFI mPower Client.csproj" />
+    <ProjectReference Include="..\mFI mPower Client\mFI-mPower.Client.csproj" />
   </ItemGroup>
 
 </Project>
